@@ -54,7 +54,7 @@ contactForm.addEventListener('submit', (e) => {
 
 // Gentle scroll-reveal for section headers and cards
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-  const revealTargets = document.querySelectorAll('.section-head, .card, .testi-card, .enfoque-list li, .hero-copy, .hero-visual');
+  const revealTargets = document.querySelectorAll('.section-head, .card, .testi-card, .enfoque-list li, .hero-copy');
   revealTargets.forEach((el) => el.classList.add('reveal'));
 
   const observer = new IntersectionObserver((entries) => {
